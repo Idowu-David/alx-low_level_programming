@@ -23,4 +23,5 @@ int main(void)
 		printf("%d is zero", i);
 	}
 	printf("\n");
+	return (0);
 }
