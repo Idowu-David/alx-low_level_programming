@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "build",
+      "command": "gcc",
+      "args": ["7-print_tebahpla.c", "-o", "a.out"],
+      "options": {
+        "cwd": "${workspaceFolder}/0x01-variables_if_else_while"
+      },
+      "presentation": {
+        "reveal": "silent"
+      }
+    }
+  ]
+}
