@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void puts2(char *);
+void puts_half(char *);
 
 /**
  * main - check the code for Holberton School students.
@@ -11,7 +11,7 @@ int main(void)
 {
 	char *str;
 
-	str = "Holberton!\0Holberton";
-	puts2(str);
+	str = "Holberton!";
+	puts_half(str);
 	return (0);
 }
