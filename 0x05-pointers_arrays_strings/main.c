@@ -1,18 +1,17 @@
-#include "main.h"
 #include <stdio.h>
 
+void puts2(char *);
+
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char s1[98];
-	char *ptr;
+	char *str;
 
-	ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
-	printf("%s", s1);
-	printf("%s", ptr);
+	str = "Holberton!\0Holberton";
+	puts2(str);
 	return (0);
 }
