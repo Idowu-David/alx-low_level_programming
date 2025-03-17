@@ -1,15 +1,21 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _strcpy - copies the string pointed to by src to dest
+ * @dest: destination
+ * @src: source
+ * Return: a pointer to dest
  */
-int main(void)
-{
-	char *str;
 
-	str = "ALX!";
-	puts2(str);
-	return (0);
+char *_strcpy(char *dest, char *src)
+{
+	int i = 0;
+
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
