@@ -4,6 +4,7 @@
  * _strncat - concatenates two strings, uses at most n bytes from src
  * @dest: pointer to the second string
  * @src: pointer to the first string
+ * @n: number of character
  * Return: a pointer to the resulting string
  */
 char *_strncat(char *dest, char *src, int n)
