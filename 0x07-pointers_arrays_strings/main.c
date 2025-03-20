@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 
 char *_strchr(char *, char);
 
@@ -13,7 +12,7 @@ int main(void)
 	char *s = "First, solve the problem. Then, write the code.";
 	char *f;
 
-	f = _strchr(s, 'a');
+	f = _strchr(s, '\0');
 	printf("%s\n", (f == NULL ? "nil" : f));
 	return (0);
 }
