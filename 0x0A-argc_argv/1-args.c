@@ -1,15 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - prints the number of arguments passed into it
- * @argc: number of arguments
- * @argv: pointer to a string of arguments
- * Return: 0, success
+ * main - prints the number of arguments passed into it.
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: returns 0, if success.
  */
 int main(int argc, char **argv)
 {
 	(void)argv;
-	if (argc >= 1)
+	if (argc == 1)
+		printf("%d\n", argc - 1);
+	else if (argc > 1)
 		printf("%d\n", argc - 1);
 	return (0);
 }
