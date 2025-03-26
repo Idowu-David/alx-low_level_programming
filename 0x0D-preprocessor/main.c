@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-	printf("%d\n", ABS(1024 - 2048));
+	printf("%d\n", SUM(2048, 4096) * 5);
 	return (0);
 }
