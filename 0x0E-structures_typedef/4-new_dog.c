@@ -42,6 +42,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 int _strlen(char *s)
 {
 	int i = 0;
+
+	if (s == NULL)
+		return (0);
 	while (s[i] != '\0')
 		i++;
 	return (i);
@@ -55,14 +58,13 @@ int _strlen(char *s)
  */
 char *_strcpy(char *s1, char *s2)
 {
-	int len = _strlen(s1);
 	int i;
 
-	s2 = malloc(sizeof(len));
-	if (s2 == NULL)
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	for (i = 0; i < len; i++)
-		s2[i] = s1[i];
-	s2[i] = '\0';
-	return (s2);
+
+	for (i = 0; s2[i] != '\0'; i++)
+		s1[i] = s2[i];
+	s1[i] = '\0';
+	return (s1);
 }
