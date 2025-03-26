@@ -14,22 +14,55 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new == NULL)
 		return (NULL);
 
-	new->name = malloc(strlen(name) + 1);
+	new->name = malloc(_strlen(name) + 1);
 	if (new->name == NULL)
 	{
 		free(new);
 		return (NULL);
 	}
-	strcpy(new->name, name);
+	_strcpy(new->name, name);
 
-	new->owner = malloc(strlen(owner) + 1);
+	new->owner = malloc(_strlen(owner) + 1);
 	if (new->owner == NULL)
 	{
 		free(new->name);
 		free(new);
 		return (NULL);
 	}
-	strcpy(new->owner, owner);
+	_strcpy(new->owner, owner);
 	new->age = age;
 	return (new);
+}
+
+/**
+ * _strlen - gets the length of a string
+ * @s: string
+ * Return: the length of the string
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
+
+/**
+ * _strcpy - copies a string
+ * @s1: first string
+ * @s2: second string
+ * Return: a pointer to the new string.
+ */
+char *_strcpy(char *s1, char *s2)
+{
+	int len = _strlen(s1);
+	int i;
+
+	s2 = malloc(sizeof(len));
+	if (s2 == NULL)
+		return (NULL);
+	for (i = 0; i < len; i++)
+		s2[i] = s1[i];
+	s2[i] = '\0';
+	return (s2);
 }
