@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	if ((atoi(argv[3]) == 0 && ((strcmp(argv[2], "/") == 0) ||
 	(strcmp(argv[2], "%") == 0))))
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(100);
 	}
 	num1 = atoi(argv[1]);
