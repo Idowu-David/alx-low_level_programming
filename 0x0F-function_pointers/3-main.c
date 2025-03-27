@@ -30,7 +30,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if ((atoi(argv[3]) == 0 && ((strcmp(argv[2], "/") == 0) || (strcmp(argv[2], "%") == 0))))
+	if ((atoi(argv[3]) == 0 && ((strcmp(argv[2], "/") == 0) ||
+	(strcmp(argv[2], "%") == 0))))
 	{
 		printf("Error");
 		exit(100);
