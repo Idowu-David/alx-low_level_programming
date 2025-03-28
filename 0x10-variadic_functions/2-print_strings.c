@@ -13,7 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *chr;
 
 	if (n == 0)
-		return;
+		printf("\n");
 	if (separator == NULL)
 		separator = "";
 	va_start(args, n);
