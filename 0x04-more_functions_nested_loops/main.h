@@ -13,6 +13,8 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
-
+int convert_day(int month, int day);
+void print_remaining_days(int month, int day, int year);
+void print_number(int n);
 
 #endif /* MAIN_H */
